@@ -39,15 +39,6 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--bg-color);
-  padding: 1.5rem;
-  line-height: 1.4;
-}
-
-body {
   font-family: 'Sora', sans-serif;
   display: flex;
   flex-direction: column;
@@ -58,6 +49,15 @@ body {
   line-height: 1.4;
   position: relative;
 }
+
+body::after {
+  position: absolute;
+  content: "Design By Code Alchemy Lab";
+  bottom: 30px;
+  right: 30px;
+  color: white;
+}
+
 
 button {
   border: none;
@@ -134,7 +134,7 @@ svg {
 }
 
 .main-button:focus {
-  border: 0.1rem solid var(--primary-color);
+  border: 0.1rem solid white;
   box-shadow: 0 0 0 0.2rem rgba(44, 98, 246, 0.4);
 }
 
